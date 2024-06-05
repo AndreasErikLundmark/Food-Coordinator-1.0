@@ -1,0 +1,78 @@
+<!--Andreas Lundmark, anlu0845 Gesällprov Wprog2 VT24-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Andreas Lundmark">
+  <meta name="description" content="Wprog2 assignment creating a website">
+  <meta name="generator" content="IntelliJ"> <!--Information of wich software used to write this code-->
+  <meta name="keyWords" content="Food, planning, every day tools">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title> Food Coordinator: LOGIN</title>
+
+  <!--  main css -->
+  <link rel="stylesheet" type="text/css" href="../css/mainsStyle.css?rnd=12345">
+  <!--  jquery mobile-->
+  <!--  <link rel="stylesheet" href="../jquery/jquery.mobile-1.4.5.css" />-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery mobile-->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- jQuery mobile-->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<header>
+  <h1 id="mainHeader">Food Coordinator</h1>
+</header>
+<main>
+  <div class="mainContentContainer">
+
+    <section class="centerCardContainer">
+      <div class="loginBox">
+        <form method="post" enctype="multipart/form-data" action="../php/authorization.php">
+          <h3>Welcome, Please Login!</h3>
+          <p>
+            <label for="name"></label>
+            <input type="email" class="myFormboxes" name="name" id="name" placeholder="Email" required>
+          </p>
+          <p>
+            <label for="name"></label>
+            <input type="password" class="myFormboxes" name="userpassword" id="userpassword" placeholder="Password"
+                   required>
+          </p>
+          <p>
+            <a href="../php/newaccount.php">New user register</a>
+          </p>
+          <p>
+            <a href="../php/newPasswordMailer.php">Forgot password?</a>
+          </p>
+
+
+          <p>
+            <input type="submit" class="ui-btn ui-shadow ui-corner-all ui-icon-login ui-btn-inline custom-button "
+                   name="push_button" value="Login">
+          </p>
+          <!--===infoSection===-->
+          <p>---info---</p>
+
+        </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!--  jquery js-->
+<script src="../js/jquery.js" type="text/javascript"></script>
+<!--  main js-->
+<script type="text/javascript" src="../js/main.js"></script>
+
+
+</body>
+</html>

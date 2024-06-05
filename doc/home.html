@@ -1,0 +1,108 @@
+<!--Andreas Lundmark, anlu0845 Gesällprov Wprog2 VT24-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Andreas Lundmark">
+  <meta name="description" content="Wprog2 assignment creating a website">
+  <meta name="generator" content="IntelliJ"> <!--Information of wich software used to write this code-->
+  <meta name="keyWords" content="Food, planning, every day tools">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Food Coordinator: HOME</title>
+  <!--  main css -->
+  <link rel="stylesheet" type="text/css" href="../css/mainsStyle.css?rnd=12345">
+
+  <!--  jquery mobile-->
+  <!--  <link rel="stylesheet" href="../jquery/jquery.mobile-1.4.5.css" />-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- jQuery Mobile JS -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<!--Loading an initial card-->
+<body onload="indexPlus()">
+
+<header>
+
+  <!--  <h1 id="mainHeader">Food Coordinator</h1>-->
+  <h1 id="mainHeader" onclick="location.href='home.html'">Food Coordinator</h1>
+
+
+</header>
+
+<main>
+
+  <div class="mainContentContainer">
+
+
+    <div data-role="main" id="buttonsHigh">
+      <div class="ui-nodisc-icon ui-alt-icon" id="highButtons">
+        <a href="../doc/home.html"
+           class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-inline custom-button ui-btn-icon-left ">Cards</a>
+        <a href="../php/shoppingList.php"
+           class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn ui-btn-inline custom-button ui-btn-icon-left ">List</a>
+        <a href="../doc/addCard.html"
+           class="ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn ui-btn-inline custom-button ui-btn-icon-left ">New</a>
+        <a href="../php/authorization.php" id="logoutbutton" onclick="return confirm('Log out?')"
+           class="ui-btn ui-alt-icon ui-shadow ui-corner-all ui-btn-inline ui-icon-logouticon ui-btn-icon-notext">Log
+          out</a>
+
+      </div>
+    </div>
+    <p id="status" hidden="hidden">---status---</p>
+    <!--===centerSection===-->
+    <section class="centerCardContainer">
+
+      <div class="Foodcard" id="Foodcard">
+
+      </div>
+
+    </section>
+
+    <!--===centerSection===-->
+    <div data-role="main" class="ui-content" id="buttonsLow">
+      <div class="ui-nodisc-icon ">
+
+        <button id="previousbutton" onclick="indexMinus()"
+                class="custom-button ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-b ui-btn-inline">
+          Previous
+        </button>
+        <button id="deletebutton" onclick="removeFromShoppingList()"
+                class="custom-button ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-b ui-btn-inline">
+          Delete
+        </button>
+        <button id=trashbutton onclick="deleteCard()"
+                class="ui-btn ui-shadow ui-alt-icon ui-corner-all ui-btn-inline ui-icon-myicon ui-btn-icon-notext">
+          myicon
+        </button>
+        <button id="heartbutton" onclick="addToShoppingList()"
+                class="custom-button ui-btn ui-shadow ui-corner-all ui-icon-heart ui-btn-icon-notext ui-btn-b ui-btn-inline">
+          Favorite
+        </button>
+        <button id="nextbutton" onclick="indexPlus()"
+                class="custom-button ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-b ui-btn-inline">
+          Next
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+<!--<footer>-->
+
+<!--</footer>-->
+<!--  jquery js-->
+<script src="../js/jquery.js" type="text/javascript"></script>
+<!--  main js-->
+<script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+</html>
