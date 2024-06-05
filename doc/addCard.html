@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Author">
+  <meta name="description" content="Wprog1 assignment creating a website">
+  <meta name="generator" content="?"> 
+  <meta name="keyWords" content="Food Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Food Coordinator: Add card</title>
+
+  <!--  main css -->
+  <link rel="stylesheet" type="text/css" href="../css/mainsStyle.css?rnd=12345">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- jQuery Mobile -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+
+<header>
+  <h1 id="mainHeader">Food Coordinator</h1>
+</header>
+<main>
+
+  <!--===centerSection===-->
+  <div class="mainContentContainer">
+    <div data-role="main" id="buttonsHigh">
+      <div class="ui-nodisc-icon ui-alt-icon" id="highButtons">
+        <a href="../doc/home.html"
+           class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-inline custom-button ui-btn-icon-left ">Cards</a>
+        <a href="../php/shoppingList.php"
+           class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn ui-btn-inline custom-button ui-btn-icon-left ">List</a>
+        <a href="../doc/addCard.html"
+           class="ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn ui-btn-inline custom-button ui-btn-icon-left ">New</a>
+        <a href="../php/authorization.php" id="logoutbutton" onclick="return confirm('Log out?')"
+           class="ui-btn ui-alt-icon ui-shadow ui-corner-all ui-btn-inline ui-icon-logouticon ui-btn-icon-notext">Log
+          out</a>
+
+      </div>
+    </div>
+    <section class="centerCardContainer">
+      <div class="formBox">
+        <form id="cardFrom" method="post" enctype="multipart/form-data" action="../php/foodCardLoader.php">
+          <p>
+            <input type="text" class="myFormboxes" id="foodcardname" name="foodcardname" placeholder="Food card name"
+                   required>
+          </p>
+
+          <div class=ingredientsForm>
+
+            <!--  Ingredient1-->
+            <input id="ingredientInput1" type="text" name="ingredient1" placeholder="Ingredient name"
+                   value="" required>
+
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1" max="99" step="1">
+
+            <select name="metric1" id="metric1" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 2-->
+            <br>
+            <br>
+            <input id="ingredientInput2" type="text" name="ingredient2" placeholder="Ingredient name">
+
+            <input type="number" id="quantity2" name="quantity2" value="1" min="1" max="99" step="1">
+
+            <select name="metric2" id="metric2" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 3-->
+            <br>
+            <br>
+            <input id="ingredientInput3" type="text" name="ingredient3" placeholder="...">
+
+            <input type="number" id="quantity3" name="quantity3" value="1" min="1" max="99" step="1">
+
+            <select name="metric3" id="metric3" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 4-->
+            <br>
+            <br>
+            <input id="ingredientInput4" type="text" name="ingredient4" placeholder="...">
+
+            <input type="number" id="quantity4" name="quantity4" value="1" min="1" max="99" step="1">
+
+            <select name="metric4" id="metric4" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 5-->
+            <br>
+            <br>
+            <input id="ingredientInput5" type="text" name="ingredient5" placeholder="...">
+
+            <input type="number" id="quantity5" name="quantity5" value="1" min="1" max="99" step="1">
+
+            <select name="metric5" id="metric5" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 6-->
+            <br>
+            <br>
+            <input id="ingredientInput6" type="text" name="ingredient6" placeholder="...">
+
+            <input type="number" id="quantity6" name="quantity6" value="1" min="1" max="99" step="1">
+
+            <select name="metric6" id="metric6" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 7-->
+            <br>
+            <br>
+            <input id="ingredientInput7" type="text" name="ingredient7" placeholder="...">
+
+            <input type="number" id="quantity7" name="quantity7" value="1" min="1" max="99" step="1">
+
+            <select name="metric7" id="metric7" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 8-->
+            <br>
+            <br>
+            <input id="ingredientInput8" type="text" name="ingredient8" placeholder="...">
+
+            <input type="number" id="quantity8" name="quantity8" value="1" min="1" max="99" step="1">
+
+            <select name="metric8" id="metric8" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 9-->
+            <br>
+            <br>
+            <input id="ingredientInput9" type="text" name="ingredient9" placeholder="...">
+
+            <input type="number" id="quantity9" name="quantity9" value="1" min="1" max="99" step="1">
+
+            <select name="metric9" id="metric9" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+
+            <!--Ingredient 10-->
+            <br>
+            <br>
+            <input id="ingredientInput10" type="text" name="ingredient10" placeholder="...">
+
+            <input type="number" id="quantity10" name="quantity10" value="1" min="1" max="99" step="1">
+
+            <select name="metric10" id="metric10" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+            <!--Ingredient 11-->
+            <br>
+            <br>
+            <input id="ingredientInput11" type="text" name="ingredient11" placeholder="...">
+
+            <input type="number" id="quantity11" name="quantity11" value="1" min="1" max="99" step="1">
+
+            <select name="metric11" id="metric11" class="select">
+
+              <option value="st">St</option>
+              <option value="kg">kg</option>
+              <option value="hg">hg</option>
+              <option value="g">g</option>
+              <option value="l">L</option>
+              <option value="dl">dl</option>
+            </select>
+
+
+          </div>
+          <p>
+            <input type="submit" id="addCardButton"
+                   class="ui-btn ui-shadow ui-corner-all ui-icon-login ui-btn-inline custom-button " name="push_button"
+                   value="Add">
+
+          </p>
+        </form>
+
+      </div>
+    </section>
+  </div>
+  <!--  jquery js-->
+  <script src="../js/jquery.js" type="text/javascript"></script>
+  <!--  main js-->
+  <script type="text/javascript" src="../js/mainJsLilo.js"></script>
+
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
