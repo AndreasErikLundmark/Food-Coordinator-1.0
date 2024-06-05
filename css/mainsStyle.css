@@ -1,0 +1,288 @@
+
+
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/Antipasto.ttf");
+}
+
+a {
+  color: black;
+}
+
+body {
+  margin: auto;
+  display: grid;
+  font-size: 90%;
+  grid-template-columns: 1fr;
+  font-family: myFont, sans-serif;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  /*letter-spacing: 2px;*/
+
+}
+
+main {
+  grid-column: 1;
+}
+
+#mainHeader {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  font-family: myFont, sans-serif;
+  cursor: pointer;
+}
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.centerCardContainer {
+  display: flex;
+}
+
+/*home.html*/
+/*Background color in heartIndicator.php*/
+.Foodcard {
+  margin-top: 10px;
+  position: static;
+  width: 290px;
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Heiti SC", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#buttonsLow {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#buttonsHigh {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 68px;
+}
+
+#logoutbutton {
+  position: relative;
+  border: none;
+}
+
+.ui-icon-logouticon:after {
+  background-image: url("../icons/logout-svgrepo-com.svg");
+  background-size: 14px 14px;
+}
+
+
+#trashbutton {
+  position: relative;
+  border: none;
+  background-color: white;
+}
+
+/*trash can icon*/
+.ui-icon-myicon:after {
+  background-image: url("../icons/trash_icon_2.svg");
+  background-size: 14px 14px;
+}
+
+
+.ui-nosvg .ui-icon-myicon:after {
+  background-image: url("../icons/trash_icon_2.png");
+}
+
+#addCardButton {
+  padding: 15px 15px; /* Adjust values as needed */
+  height: 12px;
+  width: 70px;
+  background-size: 14px 14px;
+  margin: 2px;
+  text-align: center;
+  font-size: small;
+  line-height: 0;
+}
+
+#message {
+  height: 200%;
+}
+
+.myFormboxes {
+  width: 270px;
+  height: 30px;
+}
+
+.custom-button {
+  display: inline-block;
+  opacity: 0.8;
+  z-index: 100;
+  background-color: white;
+  border-color: black;
+  font-family: myFont, sans-serif;
+  font-size: small;
+  color: black;
+
+}
+
+.custom-button .ui-icon {
+  transform: scale(0.8);
+}
+
+.ui-nodisc-icon {
+  text-align: center;
+}
+
+/*addCard.html*/
+.formBox {
+  background-color: #F9FCF9;
+  margin-top: 10px;
+  position: static;
+  width: 290px;
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Heiti SC", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#cardForm{
+  position: fixed;
+}
+
+.ingredientsForm {
+  max-height: calc(6 * 44px);
+  overflow-y: auto;
+}
+
+/*login.html*/
+.loginBox {
+  width: 290px;
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Heiti SC", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 120px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+
+/*shoppingList.html*/
+.shoppingList {
+  margin-top: 10px;
+  position: static;
+  width: 290px;
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Heiti SC", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*not used but still there for future needs*/
+footer {
+  position: fixed;
+  background-color: white;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  grid-column: 1;
+  width: 100%;
+  height: 50px;
+}
+
+/*content adjustments are minimal but in place for future needs*/
+/*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+
+  h1 {
+    font-size: 14px;
+    letter-spacing: 16px;
+  }
+
+
+  /*---------------------------------------------------------------------------------*/
+  @media only screen and (min-width: 768px) {
+
+    body {
+      grid-template-columns: 3fr;
+    }
+
+    #mainHeader {
+      /*margin-top: 20px;*/
+    }
+
+    h1 {
+      font-size: 20px;
+      letter-spacing: 20px;
+    }
+
+  }
+
+  /*Large Screens*/
+  /*---------------------------------------------------------------------------------------------*/
+  @media only screen and (min-width: 1024px) {
+
+    body {
+      grid-template-columns: 1fr 3fr 1fr;
+
+    }
+
+    header {
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: 4;
+
+    }
+
+    h1 {
+      font-size: 24px;
+      letter-spacing: 20px;
+      /*margin-top: 80px;*/
+    }
+
+    main {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    /*footer {*/
+    /*  grid-column-start: 1;*/
+    /*  grid-column-end: 4;*/
+    /*}*/
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
